@@ -76,6 +76,38 @@ const MaterialUI: React.FC = () => {
             <Paper className={classes.paperStyle}>xs=1</Paper>
         </Grid>
       </Grid>
+
+      {/* Grid(Container + item nest) */}
+      <Grid container spacing={3} direction="column">
+        <Grid item xs={12} container>
+          <Grid item xs={2}>Demo</Grid>
+          <Grid item xs={8}></Grid>
+          <Grid item xs={2}>Test</Grid>
+        </Grid>
+        <Grid item xs={12} justify="space-around" container>
+          <Grid item xs={3}>
+            Resources JSONPlaceholder comes with a set of 6 common resources:
+            /posts 100 posts/comments 500 comments /albums 100 albums /photos5000 photos
+            /todos	200 todos /users 10 users Note: resources have relations.
+            For example: posts have many comments, albums have many
+            photos, ... see guide for the full list.
+          </Grid>
+          <Grid item xs={3}>
+            Resources JSONPlaceholder comes with a set of 6 common resources:
+            /posts 100 posts/comments 500 comments /albums 100 albums /photos5000 photos
+            /todos	200 todos /users 10 users Note: resources have relations.
+            For example: posts have many comments, albums have many
+            photos, ... see guide for the full list.
+          </Grid>
+          <Grid item xs={3}>
+            Resources JSONPlaceholder comes with a set of 6 common resources:
+            /posts 100 posts/comments 500 comments /albums 100 albums /photos5000 photos
+            /todos	200 todos /users 10 users Note: resources have relations.
+            For example: posts have many comments, albums have many
+            photos, ... see guide for the full list.
+          </Grid>
+        </Grid>
+      </Grid>
     </div>
   )
 }
